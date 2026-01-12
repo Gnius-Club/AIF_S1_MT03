@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook: Sesión 3 - 1ro Secundaria</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-S1-TM3</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 3 - 1ro Secundaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 3 - 1o de Secundaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,257 +38,406 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Estructura y Precisión</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de aprendizaje:</strong>
-                                    <ul>
-                                        <li>Que los estudiantes aprendan a aplicar <strong>dimensiones</strong> y <strong>restricciones</strong> (constraints) a sus croquis 2D para que estén <strong>completamente definidos</strong> ("líneas negras").</li>
-                                        <li>Que comprendan conceptualmente la diferencia entre un diseño "<strong>frágil</strong>" y uno "<strong>robusto</strong>".</li>
-                                        <li>Que entiendan la importancia de la <strong>intención de diseño</strong> codificada en la geometría.</li>
-                                        <li><strong>Objetivo general de la sesión:</strong> Que los estudiantes transformen su croquis 2D inicial en un diseño robusto y completamente definido mediante la aplicación de dimensiones y restricciones en Onshape, comprendiendo la importancia de la intención de diseño.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li><strong>Actividad 1:</strong> Saludo de IA y Contexto (3 min)</li>
-                                        <li><strong>Actividad 2:</strong> "I Can Statement" y Presentación del Desafío (5 min)</li>
-                                        <li><strong>Actividad 3:</strong> AI GYM (Intención de Diseño y Robustez) (12 min)</li>
-                                        <li><strong>Actividad 4:</strong> Brain Spark (Definiendo el Croquis) (15 min)</li>
-                                        <li><strong>Actividad 5:</strong> Gnius STORM (Cierre de Sesión) (5 min)</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <p>Un <strong>croquis 2D</strong> en Onshape <strong>completamente definido</strong> (<strong>líneas negras</strong>), guardado como una nueva versión (v2 - Definido).</p>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Presentación de la sesión (9 Diapositivas).</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Cuentas de Onshape para cada alumno.</li>
-                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Verificar conexión a internet, acceso a Onshape y funcionamiento de Xolo.</li>
-                                                <li>Tener las diapositivas listas y en el orden correcto.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Revisar el concepto de "Robustez vs. Fragilidad" y la idea de que las restricciones son la forma de codificar la "intención de diseño".</li>
-                                        <li><strong>Preparación de Ejemplos:</strong> Tener un archivo de Onshape con dos croquis listos para la demostración en vivo: uno simple con líneas azules y otro idéntico con líneas negras, para mostrar cómo uno se deforma y el otro no.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> Usar Onshape para aplicar restricciones y definición paramétrica para lograr precisión geométrica y comprender la intención de diseño y robustez.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame por qué un croquis debe estar completamente definido y qué significa que un diseño sea robusto. Analicemos cómo las dimensiones y restricciones comunican la intención de diseño. Guíame para comprender cómo un diseño preciso facilita cambios futuros sin errores.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Intención de diseño: Es el plan que asegura que tu dibujo cambie de forma lógica cuando modifiques una medida, como si las piezas supieran cómo deben comportarse.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar Onshape para aplicar restricciones y medidas exactas en dibujos 2D.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes restricciones y dimensiones para entender cómo afectan la estabilidad del diseño.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Computadora o Tablet (1 por cada estudiante)</label>
+                        <label><input type="checkbox"> Acceso a Onshape (https://www.onshape.com/) con cuenta activa</label>
+                        <label><input type="checkbox"> Mouse externo para mayor precisión en el diseño</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa diseño CAD paramétrico en Onshape</label>
+                        <label><input type="checkbox"> 📋 Para esta misión: Asegúrate de tener tu documento de Onshape listo antes de iniciar la charla con XOLO.</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Mantener el equipo de cómputo en una superficie estable, tratar el mouse con cuidado y cerrar sesión en Onshape al finalizar.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre intención de diseño y robustez (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si el croquis no se define (sigue azul):</strong> Verificar que todos los puntos y líneas tengan restricciones o dimensiones aplicadas. Preguntar a XOLO qué restricción podría faltar.</li>
+                            <li><strong>Si aparece un error rojo en Onshape:</strong> Hay restricciones en conflicto (over-constrained). Elimina la última restricción roja o pide ayuda a XOLO para identificar el conflicto.</li>
+                            <li><strong>Si hay errores en el código o diseño:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que describan el problema o error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer un tono profesional, introducir el tema del día y guiar a los estudiantes en la activación de la sesión con el chatbot Xolo.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) Introduce el objetivo de la misión: dotar de "inteligencia" al croquis libre de la sesión anterior.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Saludos, directores. La sesión anterior dejaron un <strong>croquis 'libre'</strong>. Hoy, le daremos <strong>inteligencia</strong>. Un <strong>diseño profesional</strong> no es ambiguo; es <strong>preciso</strong> y <strong>predecible</strong>. Introduciremos las <strong>reglas</strong> que gobiernan la <strong>geometría</strong>: las <strong>dimensiones</strong> y las <strong>restricciones</strong>. Su objetivo: transformar el <strong>azul de la incertidumbre</strong> en el <strong>negro de la intención definida</strong>.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
-                            <p>Guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Como siempre, inicien su sesión con Xolo. Escriban <strong>'Hola Xolo, listo para la Misión 3'</strong>, seguido de su nombre, perfil y gustos. Esperen su confirmación para proceder.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy le daremos superpoderes de precisión a sus diseños en Onshape!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Intención de diseño y robustez en CAD.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A dominar las restricciones y dimensiones para que sus diseños sean indestructibles ante cualquier cambio.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros de la NASA en el diseño de satélites usan esta tecnología para asegurar que si cambian el tamaño de una pieza, todo el ensamblaje se ajuste automáticamente sin romperse.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
-                <p>Demostrar visualmente la diferencia entre un diseño frágil y uno robusto, y establecer el objetivo de aprendizaje.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Demostración de Fragilidad vs. Robustez ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) Realiza una demostración en vivo en Onshape para mostrar la diferencia clave de la sesión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Observen este <strong>croquis con líneas azules</strong>. (Arrastra un vértice, deformando toda la figura). Esto es un <strong>diseño 'frágil'</strong>. Si movemos una línea, todo se <strong>deforma</strong> y tendríamos que volver a empezar. Es <strong>impredecible</strong>. Un cambio no intencionado puede destruir el trabajo. Ahora, observen este otro. (Muestra el mismo <strong>croquis con líneas negras</strong> e intenta arrastrar un vértice; no se mueve). Esto es un <strong>diseño 'robusto'</strong>. Responde solo a los cambios que yo le permito a través de las <strong>dimensiones</strong>. Su misión hoy es darle esa <strong>robustez</strong> a su propio diseño.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo las restricciones (constraints) mantienen las piezas en su lugar.</li>
+                            <li>Introduce el concepto de robustez: un diseño que no se rompe al editarlo.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar Onshape para definir croquis con precisión.</li>
+                            <li>Aprender sobre la importancia de que un diseño sea robusto.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El objetivo de hoy es claro. Al final de esta sesión, podrán decir: <strong>'Yo puedo aplicar dimensiones y restricciones a mi croquis para que esté completamente definido, y entiendo por qué un diseño robusto es fundamental.'</strong></p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar Onshape para aplicar restricciones y comprender la intención de diseño.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a dar un paso fundamental en el mundo del diseño profesional. Abran su chat con XOLO y simplemente salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre cómo hacer diseños robustos en Onshape. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Vamos a descubrir por qué es vital que un croquis esté completamente definido y cómo las restricciones comunican lo que queremos crear. Si algo no queda claro, ¡pregúntenle a XOLO sin miedo! XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él.</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM (Intención de Diseño y Robustez) ⏰ 12 minutos</h2>
-                <p>Fase de diálogo individual con Xolo para entender el "porqué" de la robustez y cómo orquestar la consulta técnica.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Consulta sobre la Intención y Robustez ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre el concepto de restricciones como codificación de la intención de diseño.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Entramos al AI GYM. Su rol hoy es el de un ingeniero de calidad. Para entenderlo, pregúntenle a Xolo: <strong>“Xolo, explícame por qué un croquis robusto es importante en un proceso de diseño iterativo. ¿Cómo ayudan las restricciones a definir la intención de diseño? Ahora con Onshape AI Advisor: How do I apply a coincident constraint correctly to make my sketch fully defined?”</strong> Dediquen un tiempo a procesar su respuesta.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Orquestando la Consulta Técnica ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Explica cómo usar la respuesta estratégica de Xolo para formular preguntas técnicas precisas al Onshape AI Advisor.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los diseños CAD conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique restricciones y dimensiones precisas.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar restricciones en su croquis.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Validar su diseño en Onshape y probar cambios de dimensiones.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a reforzar mi croquis 2D aplicando dimensiones y restricciones correctas. Quiero asegurarme de que mi diseño sea estable y claro. Acompáñame a validar si mi croquis comunica correctamente mi intención de diseño."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Perfecto. Xolo les ha explicado el 'porqué' estratégico. Su prompt también incluyó una pregunta técnica para el <strong>Onshape AI Advisor</strong>. Este es el flujo de trabajo: usan a <strong>Xolo</strong> para la <strong>estrategia</strong> y al <strong>Advisor</strong> para el '<strong>cómo</strong>' técnico. Si la respuesta de texto del Advisor no es clara, su siguiente paso es ir a la <strong>Biblioteca de Técnicas Esenciales</strong>. Su objetivo es que todas las <strong>líneas</strong> de su <strong>croquis</strong> se vuelvan <strong>negras</strong>.</p>
-                                <p>Nota para el Docente: Muestre brevemente a los estudiantes cómo acceder a la 'Biblioteca de Técnicas' desde el menú principal de la plataforma antes de iniciar el Brain Spark.</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿Tu croquis cambia de color (a negro) indicando que está completamente definido?</li>
+                            <li>¿Qué pasa si intentas arrastrar un punto azul en Onshape comparado con uno negro?</li>
+                            <li>¿Funciona igual tu diseño si usas una restricción de coincidencia vs una de dimensión fija?</li>
+                            <li>¿Cómo ayuda la intención de diseño a que tu modelo sea más fácil de modificar en el futuro?</li>
+                            <li>Si cambias una medida y el resto del dibujo se deforma de manera inesperada, ¿dirías que tu diseño es robusto?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear algo increíble y profesional! Vamos a usar Onshape para aplicar todo lo que platicamos con XOLO. El flujo es sencillo: platiquen con XOLO sobre su idea, definan el 'VIBE' de su diseño, obtengan su GCS y llévenlo a Onshape. Por ejemplo, podrían diseñar una pieza mecánica que debe encajar perfectamente en otra. Experimenten cambiando las medidas; si su diseño es robusto, todo debería ajustarse solo. Si tienen errores o dudas al aplicar las restricciones, pregúntenle a XOLO, él los ayudará a depurar su croquis. ¡A diseñar! Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con las restricciones básicas. ¿Puedes enseñarme cómo hacer que mi diseño use variables paramétricas para que varias medidas cambien al mismo tiempo?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark (Definiendo el Croquis) ⏰ 15 minutos</h2>
-                <p>Fase de trabajo práctico individual para aplicar dimensiones y restricciones hasta lograr un croquis completamente definido y robusto.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Aplicación de Dimensiones y Restricciones ⏰ 10 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Los estudiantes abren su croquis anterior y comienzan a aplicar dimensiones y restricciones para definirlo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, al Brain Spark. Abran su <strong>croquis</strong> de la sesión anterior. Su misión es transformar todas las <strong>líneas azules</strong> en <strong>negras</strong>. Comiencen aplicando las <strong>dimensiones</strong> clave de su diseño. Luego, utilicen el ciclo de consulta para aprender y aplicar las <strong>restricciones</strong> necesarias (<strong>Horizontal</strong>, <strong>Vertical</strong>, <strong>Tangente</strong>, etc.) hasta que todo esté <strong>definido</strong>. Si tienen dudas, ya saben el protocolo.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Prueba de Robustez y Guardado ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Una vez el croquis está definido, los estudiantes validan activamente su robustez y guardan una nueva versión.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué restricciones y dimensiones funcionaron bien para mantener la forma.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué restricciones funcionaron mejor para dar robustez a tu diseño? ¿Qué te sorprendió?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Cuando su <strong>croquis</strong> esté <strong>completamente negro</strong>, es hora de la <strong>prueba final</strong>. Intenten <strong>arrastrar</strong> cualquier punto; no debería moverse. Luego, cambien el valor de una <strong>dimensión</strong> clave y observen cómo el resto se reajusta de forma predecible. Eso es un <strong>diseño robusto</strong>. Finalmente, guarden una <strong>nueva versión</strong> con un nombre descriptivo, como 'Croquis Base v2 - Definido'.</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi diseño utiliza restricciones de tangencia y dimensiones fijas. Me sorprendió que al cambiar el radio, todo el croquis se mantuvo estable."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
-                <p>Fase final para compartir los croquis robustos, reflexionar sobre el proceso y conectar con la siguiente misión.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 9) Guía una reflexión silenciosa e individual sobre el proceso de definir el croquis.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                     Tiempo. Detengan su trabajo. Tómense un minuto para reflexionar: <strong>¿Qué fue más difícil, aplicar dimensiones o restricciones? ¿Qué 'intención' de diseño (como dos líneas que debían ser iguales) descubrieron que no habían considerado al principio?</strong>
-                                </p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Pair (Discusión y Demo en Parejas) ⏰ 2 minutos</h3>
-                            <p>Los estudiantes comparten sus croquis definidos y demuestran su robustez en parejas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    En parejas, compartan sus pantallas. Muestren su <strong>croquis 'negro'</strong>. Cambien una <strong>dimensión</strong> en vivo para demostrarle a su compañero la <strong>robustez</strong> del diseño. Discutan sus respuestas a las preguntas de la reflexión.
-                                </p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) Recoge impresiones y concluye la sesión, sentando las bases para el modelado 3D.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    Volvemos al grupo. ¿Algún voluntario para compartir una "<strong>intención</strong>" que descubrió? (Escucha 1-2 respuestas). Excelente. Han creado una <strong>base inteligente</strong> para su proyecto. Este <strong>croquis</strong> ya no es un dibujo, es un <strong>sistema de reglas</strong>. Han codificado su <strong>intención</strong>. Con esta <strong>base sólida</strong>, en la próxima sesión, daremos el salto a la <strong>tercera dimensión</strong>. Verán cómo esta <strong>robustez 2D</strong> se traduce en <strong>poder</strong> y <strong>flexibilidad en 3D</strong>.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
